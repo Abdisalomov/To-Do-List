@@ -1,6 +1,6 @@
 /* Font Family */
 * {
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -28,4 +28,61 @@ body {
 	color: #333;
 	margin-bottom: 15px;
 	font-size: 30px;
+}
+
+.container-input {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.input {
+	flex: 1;
+	padding: 12px;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	outline: none;
+}
+
+.btn {
+	background-color: #007bff;
+	color: #ffffff;
+	border: none;
+	padding: 12px 18px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
+.main {
+	overflow-y: auto;
+	min-height: 300px;
+	padding-right: 10px;
+	flex-grow: 1;
+	scroll-behavior: smooth;
+}
+
+/* .main scrolbar styling */
+.main::-webkit-scrollbar-track {
+	width: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+	background: linear-gradient(135deg, #007bff, #00d4ff);
+	border-radius: 10px;
+}
+
+.task-count {
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+	background: #007bff;
+	padding: 8px;
+	border-radius: 8px;
+	margin-top: auto;
 }
